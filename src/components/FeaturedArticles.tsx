@@ -42,7 +42,7 @@ const FeaturedArticles = () => {
   return (
     <div>
       <div className="flex items-center justify-between mb-6">
-        <h2 className="text-2xl font-bold text-white">Featured Articles</h2>
+        <h2 className="text-2xl font-bold text-gray-800">Featured Articles</h2>
         <Link 
           to="/articles" 
           className="flex items-center text-ncompass-green hover:text-ncompass-green/80"
@@ -59,8 +59,8 @@ const FeaturedArticles = () => {
             className="kb-card"
           >
             <span className="text-xs font-semibold text-ncompass-green">{article.category}</span>
-            <h3 className="text-lg font-semibold mt-2 text-white">{article.title}</h3>
-            <p className="mt-2 text-gray-400">{article.description}</p>
+            <h3 className="text-lg font-semibold mt-2 text-gray-800">{article.title}</h3>
+            <p className="mt-2 text-gray-600">{article.description}</p>
             <div className="mt-4 flex items-center justify-between">
               <span className="text-xs text-gray-500">{article.readTime}</span>
               <span className="text-ncompass-green text-sm font-medium">Read more</span>

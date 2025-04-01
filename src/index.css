@@ -38,33 +38,33 @@
     --license-unassigned: 220 3% 64%;
     --license-outdated: 220 7% 85%;
 
-    /* UI Theme Colors */
-    --background: var(--midnight-blue);
-    --foreground: 60 50% 98%;
+    /* UI Theme Colors - Lighter Version */
+    --background: 0 0% 100%;
+    --foreground: 220 70% 13%;
 
-    --card: 220 70% 13%;
-    --card-foreground: 60 50% 98%;
+    --card: 220 33% 98%;
+    --card-foreground: 220 70% 13%;
 
-    --popover: 220 70% 13%;
-    --popover-foreground: 60 50% 98%;
+    --popover: 220 33% 98%;
+    --popover-foreground: 220 70% 13%;
 
-    --primary: 220 70% 13%;
-    --primary-foreground: 84 65% 50%;
+    --primary: 220 33% 98%;
+    --primary-foreground: 220 70% 13%;
 
     --secondary: 84 65% 50%;
     --secondary-foreground: 220 70% 13%;
 
-    --muted: 220 70% 20%;
-    --muted-foreground: 60 50% 90%;
+    --muted: 220 33% 96%;
+    --muted-foreground: 220 20% 40%;
 
     --accent: 84 65% 50%;
     --accent-foreground: 220 70% 13%;
 
     --destructive: 7 78% 57%;
-    --destructive-foreground: 60 50% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 70% 20%;
-    --input: 220 70% 20%;
+    --border: 220 33% 90%;
+    --input: 220 33% 90%;
     --ring: 84 65% 50%;
 
     --radius: 0.5rem;
@@ -75,7 +75,7 @@
   }
 
   body {
-    @apply bg-ncompass-blue text-foreground min-h-screen;
+    @apply bg-white text-foreground min-h-screen;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
@@ -90,23 +90,23 @@
   }
 
   .kb-card {
-    @apply rounded-lg bg-card p-6 shadow-lg hover:shadow-xl transition-shadow duration-300;
+    @apply rounded-lg bg-card p-6 shadow-md hover:shadow-lg transition-shadow duration-300;
   }
 
   .kb-search-input {
-    @apply bg-opacity-20 bg-white text-white placeholder-gray-300 rounded-l-lg p-3 focus:outline-none focus:ring-2 focus:ring-ncompass-green w-full;
+    @apply bg-white border border-gray-300 text-gray-800 placeholder-gray-500 rounded-l-lg p-3 focus:outline-none focus:ring-2 focus:ring-ncompass-green w-full;
   }
 
   .kb-search-button {
-    @apply bg-ncompass-green text-ncompass-blue font-semibold rounded-r-lg p-3;
+    @apply bg-ncompass-green text-white font-semibold rounded-r-lg p-3;
   }
 
   .kb-category-card {
-    @apply bg-muted p-6 rounded-lg hover:bg-opacity-90 transition-colors duration-300;
+    @apply bg-muted p-6 rounded-lg hover:bg-opacity-90 transition-colors duration-300 border border-gray-200;
   }
 
   .kb-nav-link {
-    @apply text-gray-300 hover:text-ncompass-green transition-colors duration-200;
+    @apply text-gray-700 hover:text-ncompass-green transition-colors duration-200;
   }
 
   .kb-nav-link-active {

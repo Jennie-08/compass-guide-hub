@@ -18,7 +18,7 @@ const Header = () => {
   const isMobile = useIsMobile();
 
   return (
-    <header className="py-4 bg-ncompass-blue">
+    <header className="py-4 bg-ncompass-blue shadow-md">
       <div className="kb-container">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -30,7 +30,7 @@ const Header = () => {
             </div>
             <div>
               <Link to="/" className="text-white font-bold text-xl">Knowledge Base</Link>
-              <p className="text-xs text-gray-400">A Space To Search And Browse For Answers And Documentation</p>
+              <p className="text-xs text-gray-300">A Space To Search And Browse For Answers And Documentation</p>
             </div>
           </div>
 
@@ -53,7 +53,7 @@ const Header = () => {
                 <Link 
                   key={item.path} 
                   to={item.path} 
-                  className="kb-nav-link"
+                  className="text-gray-300 hover:text-ncompass-green transition-colors duration-200"
                 >
                   {item.text}
                 </Link>
@@ -79,7 +79,7 @@ const Header = () => {
                 <Link 
                   key={item.path} 
                   to={item.path} 
-                  className="kb-nav-link py-2"
+                  className="text-gray-300 hover:text-ncompass-green py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.text}

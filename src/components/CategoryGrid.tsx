@@ -68,10 +68,10 @@ const CategoryGrid = () => {
               <category.icon className="h-6 w-6" />
             </div>
             <div>
-              <h3 className="text-lg font-semibold text-white group-hover:text-ncompass-green transition-colors">
+              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-ncompass-green transition-colors">
                 {category.title}
               </h3>
-              <p className="text-gray-400 mt-1">{category.description}</p>
+              <p className="text-gray-600 mt-1">{category.description}</p>
               <div className="flex items-center mt-2 text-sm text-gray-500">
                 <span>{category.articles} articles</span>
               </div>
