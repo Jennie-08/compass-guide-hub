@@ -63,11 +63,36 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom brand colors
+				// Custom brand colors from the provided color palette
 				ncompass: {
-					blue: '#091635',
-					green: '#8DCB2C',
-					lightgreen: '#D4F9A8',
+					blue: '#091835', // Midnight Blue
+					green: '#8DCB2C', // Apple Green 
+					lightgreen: '#D4F9A8', // Light shade of Apple Green
+					danger: '#E73535', // Danger/Error
+					success: '#3ADB30', // Success
+					info: '#095AF3', // Information/Links
+					gray: {
+						50: '#F8F8F9', // Grayscale 12
+						100: '#F2F2F3', // Grayscale 11
+						200: '#F0F0F1', // Grayscale 10
+						300: '#E7E8ED', // Grayscale 09
+						400: '#D7D8DF', // Grayscale 08
+						500: '#B8BAC4', // Grayscale 07
+						600: '#9BA0AC', // Grayscale 06
+						700: '#838999', // Grayscale 05
+						800: '#646C80', // Grayscale 04
+						900: '#464C5D', // Grayscale 03
+					},
+					status: {
+						online: '#3ADB30',
+						assigned: '#8DCB2C',
+						offline: '#F23A55',
+						demo: '#008FFD',
+						pending: '#FF9D00',
+						inactive: '#646C80',
+						unassigned: '#98A0AC',
+						outdated: '#C0C4CC',
+					}
 				}
 			},
 			borderRadius: {

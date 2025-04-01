@@ -7,14 +7,16 @@ interface SearchBarProps {
   className?: string;
   size?: 'default' | 'large';
   placeholder?: string;
+  value?: string;
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({ 
   className = '', 
   size = 'default',
-  placeholder = 'Search for articles, tutorials, FAQs...'
+  placeholder = 'Search for articles, tutorials, FAQs...',
+  value = ''
 }) => {
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(value);
   const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {

@@ -5,7 +5,41 @@
 
 @layer base {
   :root {
-    --background: 220 70% 8%;
+    /* Primary Colors */
+    --midnight-blue: 220 70% 8%;
+    --apple-green: 84 65% 50%;
+    
+    /* Alert Colors */
+    --danger: 7 78% 57%;
+    --success: 120 76% 55%;
+    --info: 217 88% 62%;
+    
+    /* Gray Scale */
+    --grayscale-01: 220 72% 7%;
+    --grayscale-02: 220 9% 46%;
+    --grayscale-03: 220 6% 52%;
+    --grayscale-04: 220 5% 58%;
+    --grayscale-05: 220 5% 65%;
+    --grayscale-06: 220 5% 72%;
+    --grayscale-07: 220 5% 79%;
+    --grayscale-08: 220 5% 86%;
+    --grayscale-09: 220 5% 93%;
+    --grayscale-10: 220 5% 95%;
+    --grayscale-11: 220 5% 97%;
+    --grayscale-12: 220 5% 99%;
+    
+    /* License Status Colors */
+    --license-online: 120 76% 55%;
+    --license-assigned: 84 65% 50%;
+    --license-offline: 359 65% 61%;
+    --license-demo: 202 97% 62%;
+    --license-pending: 33 100% 62%;
+    --license-inactive: 220 11% 57%;
+    --license-unassigned: 220 3% 64%;
+    --license-outdated: 220 7% 85%;
+
+    /* UI Theme Colors */
+    --background: var(--midnight-blue);
     --foreground: 60 50% 98%;
 
     --card: 220 70% 13%;
@@ -26,7 +60,7 @@
     --accent: 84 65% 50%;
     --accent-foreground: 220 70% 13%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 7 78% 57%;
     --destructive-foreground: 60 50% 98%;
 
     --border: 220 70% 20%;
