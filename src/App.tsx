@@ -13,6 +13,7 @@ import VideoPage from "./pages/VideoPage";
 import SearchResultsPage from "./pages/SearchResultsPage";
 import ContactPage from "./pages/ContactPage";
 import GlossaryPage from "./pages/GlossaryPage";
+import HelpPage from "./pages/HelpPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="/search" element={<SearchResultsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/glossary" element={<GlossaryPage />} />
+            <Route path="/help" element={<HelpPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>

@@ -57,12 +57,12 @@ const Header = () => {
                   {item.text}
                 </Link>
               ))}
-              <a 
-                href="#" 
+              <Link 
+                to="/help" 
                 className="flex items-center text-ncompass-green"
               >
                 <HelpCircle className="h-4 w-4 mr-1" /> Help
-              </a>
+              </Link>
             </nav>
           )}
 
@@ -90,13 +90,13 @@ const Header = () => {
                   {item.text}
                 </Link>
               ))}
-              <a 
-                href="#" 
+              <Link 
+                to="/help" 
                 className="flex items-center text-ncompass-green py-2"
                 onClick={() => setIsOpen(false)}
               >
                 <HelpCircle className="h-4 w-4 mr-1" /> Help
-              </a>
+              </Link>
             </nav>
           </div>
         )}
