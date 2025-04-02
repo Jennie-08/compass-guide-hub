@@ -106,7 +106,7 @@
   }
 
   .kb-nav-link {
-    @apply text-gray-700 hover:text-ncompass-green transition-colors duration-200;
+    @apply text-ncompass-blue hover:text-ncompass-green transition-colors duration-200;
   }
 
   .kb-nav-link-active {
