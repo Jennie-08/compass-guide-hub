@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Search } from 'lucide-react';
+import { Menu, X, Search, HelpCircle, BookOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIsMobile } from '@/hooks/use-mobile';
 
@@ -9,8 +9,10 @@ const navItems = [
   { text: 'Dashboard', path: '/' },
   { text: 'Tutorials', path: '/category/tutorials' },
   { text: 'Guides', path: '/category/guides' },
+  { text: 'Glossary', path: '/glossary' },
   { text: 'FAQs', path: '/category/faqs' },
   { text: 'Videos', path: '/videos' },
+  { text: 'Contact', path: '/contact' },
 ];
 
 const Header = () => {
@@ -23,10 +25,7 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-10 h-10 bg-ncompass-green rounded-md flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#091635" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
-                <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z" />
-                <path d="m8 12 3 3 5-5" />
-              </svg>
+              <BookOpen className="w-6 h-6 text-ncompass-blue" />
             </div>
             <div>
               <Link to="/" className="text-white font-bold text-xl">Knowledge Base</Link>
@@ -58,6 +57,12 @@ const Header = () => {
                   {item.text}
                 </Link>
               ))}
+              <a 
+                href="#" 
+                className="flex items-center text-ncompass-green"
+              >
+                <HelpCircle className="h-4 w-4 mr-1" /> Help
+              </a>
             </nav>
           )}
 
@@ -85,6 +90,13 @@ const Header = () => {
                   {item.text}
                 </Link>
               ))}
+              <a 
+                href="#" 
+                className="flex items-center text-ncompass-green py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                <HelpCircle className="h-4 w-4 mr-1" /> Help
+              </a>
             </nav>
           </div>
         )}
