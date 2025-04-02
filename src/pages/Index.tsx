@@ -21,7 +21,7 @@ const Index = () => {
       <main className="flex-grow">
         {/* Categories section */}
         <section className="kb-section kb-container">
-          <h2 className="text-2xl font-bold text-white mb-6">Browse by Category</h2>
+          <h2 className="text-2xl font-bold text-ncompass-blue mb-6">Browse by Category</h2>
           <CategoryGrid />
         </section>
         
@@ -33,7 +33,7 @@ const Index = () => {
         {/* Video guides section */}
         <section className="kb-section kb-container">
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-white">Video Guides</h2>
+            <h2 className="text-2xl font-bold text-ncompass-blue">Video Guides</h2>
             <Link 
               to="/videos" 
               className="flex items-center text-ncompass-green hover:text-ncompass-green/80"
@@ -57,10 +57,10 @@ const Index = () => {
         </section>
         
         {/* Help section */}
-        <section className="kb-section kb-container bg-muted rounded-lg p-8 my-12">
+        <section className="kb-section kb-container bg-ncompass-blue/10 rounded-lg p-8 my-12">
           <div className="text-center max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold text-white mb-4">Need More Help?</h2>
-            <p className="text-gray-400 mb-6">
+            <h2 className="text-2xl font-bold text-ncompass-blue mb-4">Need More Help?</h2>
+            <p className="text-gray-700 mb-6">
               Can't find what you're looking for? Our support team is ready to assist you.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -72,7 +72,7 @@ const Index = () => {
               </Link>
               <Link 
                 to="/category/faqs" 
-                className="inline-flex items-center justify-center py-3 px-6 rounded-lg bg-white/10 text-white font-medium hover:bg-white/20 transition-colors"
+                className="inline-flex items-center justify-center py-3 px-6 rounded-lg bg-ncompass-blue text-white font-medium hover:bg-ncompass-blue/90 transition-colors"
               >
                 Browse FAQs
               </Link>
